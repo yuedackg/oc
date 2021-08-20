@@ -1,0 +1,6 @@
+
+<a href="./images/KY1.jpg" data-lightbox="abc" data-title="桜写真拡大">
+    <img src="./images/KY1.jpg" alt="">
+ </a>
+
+ 
