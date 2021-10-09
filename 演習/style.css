@@ -1,0 +1,27 @@
+img{
+    width: 200px;
+    height: 300px;
+}
+body{
+    background-color: rgb(210, 250, 215);
+    width: 1000px;
+}
+header,main,footer{
+    margin: 5px;
+}
+header{
+    border: red solid 2px;
+    border-radius: 5mm;
+    text-align: center;
+
+}
+main{
+    border: red solid 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: none;
+}
+footer{
+    border: red solid 2px;
+}
