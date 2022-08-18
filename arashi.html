@@ -37,9 +37,12 @@
 		.hiduke {
 			width: 30ex;
 		}
-
+		.newsItemTitle{
+			margin-left: 100px;
+		}
 		.newsItem {
 			width: 60em;
+			margin-left: 100px;
 		}
 		nav{
 			display: flex;
@@ -53,6 +56,10 @@
 		}
 		body {
 			background-color:aqua;
+		}
+		footer{
+			display: flex;
+			align-items: center;
 		}
 	</style>
 </head>
@@ -77,7 +84,7 @@
 	</nav>
 	<main>
 		<section>
-			<div>News</div>
+			<div class="newsItemTitle">News</div>
 			<div>
 				<div class="newsItem">
 					<div class="hiduke">2022.08.01</div>
@@ -97,8 +104,10 @@
 
 	</main>
 	<footer>
+		
 		<hr>
-		Copyright (c) ARASHI All Right Reserve
+		<div>Copyright (c) ARASHI All Right Reserve</div>
+		
 	</footer>
 </body>
 
