@@ -7,26 +7,42 @@
 	<link rel="stylesheet" href="arashi.css">
 	<style>
 		body {
+			display: flex;
+			flex-wrap: wrap;
 			width: 800px;
 		}
-		
+		nav{
+			width: 30%;
+		}
+		main{
+			width: 70%;
+		}
+		footer{
+			width: 100%;
+		}
 		.logo {
 			width: 200px;
 			height: 200px;
-			border: solid 1px red;
+			/* border: solid 1px red; */
 			margin-left: 100px;
+			/* ロゴファイルをいかに指定 */
+			background-image: url(./images/logo.png);	
+			background-size: 100% 100%;
 		}
 
 		.membersPhoto {
 			width: 500px;
 			height: 200px;
-			border: solid 1px red;
+			/* border: solid 1px red; */
 			margin-left: 100px;
+			background-image: url(./images/members.jpg);
+			background-size: 100% 100%;
 		}
 
 		.menuItem {
 			border-bottom: 2px solid red;
 			width: 10em;
+			margin-bottom: 10px;
 		}
 
 		.newsItem {
@@ -53,21 +69,50 @@
 		}
 		header{
 			display: flex;
+			margin-bottom: 50px;
 		}
 		body {
-			background-color:aqua;
+			background-color: beige;
 		}
 		footer{
 			display: flex;
 			align-items: center;
 		}
+		.profileListItem{
+			display: flex;
+		}
+		.profileListPeriod{
+			width: 150px;
+			/* border: solid 1px red; */
+		}
+		.profileListDescription{
+			width: 400px;
+			/* border: solid 1px red; */
+		}
+		.secProfile{
+			display: none;
+		}
+		.secGallary{
+			display: none;
+		}
+		.secDiscography{
+			display: none;
+		}
+		.ToIchiran{
+			justify-content: right;
+		}
 	</style>
+	<script>
+	
+	</script>
 </head>
 
 <body>
 	<header>
-		<div class="logo"><img src="./img/logo.jpg" alt="Group Logo"></div>
-		<div class="membersPhoto"><img src="./img/group.jpg" alt="members photo"></div>
+		<!-- <div class="logo"><img src="./img/logo.jpg" alt="Group Logo"></div>
+		<div class="membersPhoto"><img src="./img/group.jpg" alt="members photo"></div> -->
+		<div class="logo"> </div>
+		<div class="membersPhoto"> </div>
 
 	</header>
 	<nav>
@@ -77,28 +122,38 @@
 			<div class="menuItem">Gallary</div>
 			<div class="menuItem">Discography</div>
 		</div>
-		<div class="NavItem">
-			<div>Profile</div>
-		</div>
+		
 
 	</nav>
 	<main>
-		<section>
+		<section class="secProfile">
+
+		</section>
+		
+		<section class="secNews">
 			<div class="newsItemTitle">News</div>
 			<div>
 				<div class="newsItem">
-					<div class="hiduke">2022.08.01</div>
-					<div class="newsTitle">タイトル1</div>
+					<div class="hiduke">2022.08.21</div>
+					<div class="newsTitle">XXXXXXXXXXXX</div>
 				</div>
 				<div class="newsItem">
-					<div class="hiduke">2022.07.01</div>
-					<div class="newsTitle">タイトル1</div>
+					<div class="hiduke">2022.08.06</div>
+					<div class="newsTitle">XXXXXXXXXXXX</div>
 				</div>
 				<div class="newsItem">
-					<div class="hiduke">2022.06.01</div>
-					<div class="newsTitle">タイトル1</div>
+					<div class="hiduke">2022.07.23</div>
+					<div class="newsTitle">XXXXXXXXXXXXXXXX</div>
 				</div>
+				
 			</div>
+			<div class="ToIchiran">一覧へ</div>
+		</section>
+		<section class="secGallary">
+
+		</section>
+		<section class="secDiscography">
+
 		</section>
 
 
