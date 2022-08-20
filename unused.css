@@ -1,0 +1,13 @@
+.profileListItem {
+    display: flex;
+}
+
+.profileListPeriod {
+    width: 150px;
+    /* border: solid 1px red; */
+}
+
+.profileListDescription {
+    width: 400px;
+    /* border: solid 1px red; */
+}

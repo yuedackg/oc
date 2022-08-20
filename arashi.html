@@ -4,107 +4,125 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ｘｘｘｘｘ</title>
-	<link rel="stylesheet" href="arashi.css">
+	<!-- 全体のデザイン -->
+	<link rel="stylesheet" href="base.css">
+	<!-- headerセクションのデザイン -->
+	<link rel="stylesheet" href="./header.css">
+	<!-- navセクションのデザイン -->
+	<link rel="stylesheet" href="./nav.css">
+	<!-- <link rel="stylesheet" href="./main.css"> -->
+	<!-- <link rel="stylesheet" href="./footer.css">
+	<link rel="stylesheet" href="profile.css">
+	<link rel="stylesheet" href="gallaly.css">
+	<link rel="stylesheet" href="unused.css"> -->
 	<style>
-		body {
+		/* mainセクションのデザイン */
+		section {
+			box-sizing: border-box;
+			/* border: solid 1px pink; */
+			width: calc(800px - 200px - 10px);
+			padding-top: 10px;
+		}
+
+		/* profileセクションのデザイン */
+		.secProfile {
+			display: block;
+			padding-top: 0;
+		}
+
+		.profilePerson {
 			display: flex;
+			box-sizing: border-box;
 			flex-wrap: wrap;
-			width: 800px;
 		}
-		nav{
-			width: 30%;
-		}
-		main{
-			width: 70%;
-		}
-		footer{
-			width: 100%;
-		}
-		.logo {
+
+		.profileFace {
 			width: 200px;
 			height: 200px;
-			/* border: solid 1px red; */
-			margin-left: 100px;
-			/* ロゴファイルをいかに指定 */
-			background-image: url(./images/logo.png);	
-			background-size: 100% 100%;
+			box-sizing: border-box;
+			border: solid 1px red;
+
 		}
 
-		.membersPhoto {
-			width: 500px;
-			height: 200px;
-			/* border: solid 1px red; */
-			margin-left: 100px;
-			background-image: url(./images/members.jpg);
-			background-size: 100% 100%;
+		.profileData {
+			width: calc(390px);
+			box-sizing: border-box;
+			border: solid 1px red;
+			/* display: flex;
+			flex-wrap: wrap;
+			flex-direction: ; */
+		}
+		.profileData:nth-child(3){
+			width: 100%;
+			overflow-wrap: break-word;
 		}
 
-		.menuItem {
-			border-bottom: 2px solid red;
-			width: 10em;
-			margin-bottom: 10px;
+		.profileItem {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.profileItem div:nth-child(1) {
+			width: 100px;
+			box-sizing: border-box;
+			/* border: solid 1px green; */
+		}
+
+		.profileItem div:nth-child(2) {
+			width: 200px;
+			box-sizing: border-box;
+			/* border: solid 1px lime; */
+		}
+
+		/* Newsについてのデザイン */
+		.secNews {
+			display: none;
+			/* display: flex;
+			flex-wrap: wrap; */
 		}
 
 		.newsItem {
+			margin-top: 10px;
+			border-bottom: solid 1px red;
 			display: flex;
-			border-bottom: solid 2px red;
 		}
 
 		.hiduke {
-			width: 30ex;
-		}
-		.newsItemTitle{
-			margin-left: 100px;
-		}
-		.newsItem {
-			width: 60em;
-			margin-left: 100px;
-		}
-		nav{
-			display: flex;
-			/* margin-left: 100px; */
-		}
-		.NavItem{
-			margin-left: 100px;
-		}
-		header{
-			display: flex;
-			margin-bottom: 50px;
-		}
-		body {
-			background-color: beige;
-		}
-		footer{
-			display: flex;
-			align-items: center;
-		}
-		.profileListItem{
-			display: flex;
-		}
-		.profileListPeriod{
 			width: 150px;
-			/* border: solid 1px red; */
 		}
-		.profileListDescription{
-			width: 400px;
-			/* border: solid 1px red; */
+
+		.newsTitle {
+			width: 500px;
 		}
-		.secProfile{
+
+		.newsToIchiran {
+			align-items: center;
+			text-align: right;
+		}
+
+		.secGallary {
 			display: none;
 		}
-		.secGallary{
+
+		.secDiscography {
 			display: none;
 		}
-		.secDiscography{
-			display: none;
+
+		/* footerセクションのデザイン */
+		footer {
+			border-left: none;
+			border-top: solid 2px red;
+			width: 100%;
+			margin-top: 20px;
+			display: flex;
 		}
-		.ToIchiran{
-			justify-content: right;
+
+		footer div {
+			align-items: center;
+			margin: 0 auto;
 		}
 	</style>
-	<script>
-	
-	</script>
+	<script src="switchscreen.js"></script>
 </head>
 
 <body>
@@ -112,43 +130,70 @@
 		<!-- <div class="logo"><img src="./img/logo.jpg" alt="Group Logo"></div>
 		<div class="membersPhoto"><img src="./img/group.jpg" alt="members photo"></div> -->
 		<div class="logo"> </div>
-		<div class="membersPhoto"> </div>
+		<div class="logoMain"> </div>
 
 	</header>
 	<nav>
 		<div class="NavItem">
-			<div class="menuItem">News</div>
+			<div class="menuItem" id="menuNews">News</div>
 			<div class="menuItem">Profile</div>
 			<div class="menuItem">Gallary</div>
 			<div class="menuItem">Discography</div>
 		</div>
-		
+
 
 	</nav>
 	<main>
-		<section class="secProfile">
+		<section class="secProfile" id="secProfile">
+			<div class="profilePerson">
+				<div class="profileFace">
+					<img src="./images/person1.jpg" alt="一人目">
+				</div>
+				<div class="profileData">
+					<div class="profileItem">
+						<div>名前：</div>
+						<div>ｘｘ　ｘｘｘｘ</div>
+					</div>
+					<div class="profileItem">
+						<div>生年月日：</div>
+						<div>2000.xx.xx</div>
+					</div>
+					<div>
+						<p>
+							xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx
+							xxxxxxxxxxxxxxxxxxxxx
+							xxxxxxxxxxxxxxxxxxxxx
+							xxxxxxxxxxxxxxxxxxxxx
+							xxxxxxxxxxxxxxxxxxxxx
+							xxxxxxx
+						</p>
 
+					</div>
+				</div>
+
+			</div>
 		</section>
-		
-		<section class="secNews">
+
+		<section class="secNews" id="secNews">
 			<div class="newsItemTitle">News</div>
-			<div>
+			<div class="newsList">
 				<div class="newsItem">
-					<div class="hiduke">2022.08.21</div>
-					<div class="newsTitle">XXXXXXXXXXXX</div>
+					<div class="hiduke">2022.08.27</div>
+					<div class="newsTitle">夏フェス　2回目</div>
 				</div>
 				<div class="newsItem">
-					<div class="hiduke">2022.08.06</div>
-					<div class="newsTitle">XXXXXXXXXXXX</div>
+					<div class="hiduke">2022.08.21</div>
+					<div class="newsTitle">体験入学</div>
 				</div>
 				<div class="newsItem">
 					<div class="hiduke">2022.07.23</div>
-					<div class="newsTitle">XXXXXXXXXXXXXXXX</div>
+					<div class="newsTitle">夏フェス　1回目</div>
 				</div>
-				
+				<div class="newsToIchiran">一覧へ</div>
 			</div>
-			<div class="ToIchiran">一覧へ</div>
+
 		</section>
+
 		<section class="secGallary">
 
 		</section>
@@ -159,10 +204,10 @@
 
 	</main>
 	<footer>
-		
-		<hr>
-		<div>Copyright (c) ARASHI All Right Reserve</div>
-		
+		<!-- 
+		<hr> -->
+		<div>Copyright (c) XXXXX All Right Reserve</div>
+
 	</footer>
 </body>
 

@@ -1,0 +1,14 @@
+
+
+
+		nav {
+			width: 200px;
+			margin-right: 10px;
+			background-color: burlywood;
+			padding: 10px;
+		}
+
+		.menuItem {
+			margin-top: 10px;
+			border-bottom: solid 2px red;
+		}

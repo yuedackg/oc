@@ -1,0 +1,30 @@
+
+.newsItem {
+    display: flex;
+    border-bottom: solid 2px red;
+}
+.newsItemTitle{
+    margin-left: 100px;
+}
+.newsItem {
+    width: 60em;
+    margin-left: 100px;
+}
+		.newsList{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px yellow;
+}
+.ToIchiran{
+    justify-content: right;
+    border: solid 1px red;
+}
+
+.hiduke {
+    width: 30ex;
+}
+.secNews{
+    border: solid 1px lime;
+    display: flex;
+    flex-direction: column;
+}
