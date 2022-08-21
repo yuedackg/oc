@@ -101,10 +101,23 @@
 			text-align: right;
 		}
 
+		/* Garallyセクションについてのデザイン */
 		.secGallary {
 			display: none;
 		}
 
+		.garallyItemImage {
+			width: 300px;
+			height: 300px;
+			border: solid 1px red;
+		}
+
+		.garallyItemString {
+			width: 300px;
+
+		}
+
+		/* Discographyについてのデザイン */
 		.secDiscography {
 			display: none;
 		}
@@ -123,18 +136,8 @@
 			margin: 0 auto;
 		}
 	</style>
-	<script src="switchscreen.js"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const item1 = document.getElementById("menuNews");
-			item1.addEventListener("click", function () {
-				console.log("change...")
-			}, false);
+	<!-- <script src="switchscreen.js"></script> -->
 
-		}, false);
-
-
-	</script>
 </head>
 
 <body>
@@ -206,11 +209,24 @@
 
 		</section>
 
-		<section class="secGallary">
+		<section class="secGallary" id="secGallary">
+			<div class="garallyItem">
+				<div class="garallyItemImage"></div>
+				<div class="garallyItemString">xxxxx</div>
+			</div>
+			<div class="garallyItem">
+				<div class="garallyItemImage"></div>
+				<div class="garallyItemString">xxxxx</div>
+			</div>
+			<div class="garallyItem">
+				<div class="garallyItemImage"></div>
+				<div class="garallyItemString">xxxxx</div>
+			</div>
 
 		</section>
-		<section class="secDiscography">
 
+		<section class="secDiscography" id="secDiscography">
+			Now constracting...
 		</section>
 
 
@@ -223,5 +239,36 @@
 	</footer>
 </body>
 
+<script>
+
+	document.getElementById("menuNews").addEventListener('click', function () {
+		console.log("change...")
+		document.getElementById("secNews").style.display = "block";
+		document.getElementById("secProfile").style.display = "none";
+		document.getElementById("secGallary").style.display = "none";
+		document.getElementById("secDiscography").style.display = "none";
+	}, false);
+	document.getElementById("menuProfile").addEventListener('click', function () {
+		console.log("change...")
+		document.getElementById("secNews").style.display = "none";
+		document.getElementById("secProfile").style.display = "block";
+		document.getElementById("secGallary").style.display = "none";
+		document.getElementById("secDiscography").style.display = "none";
+	}, false);
+	document.getElementById("menuGallary").addEventListener('click', function () {
+		console.log("change...")
+		document.getElementById("secNews").style.display = "none";
+		document.getElementById("secProfile").style.display = "none";
+		document.getElementById("secGallary").style.display = "block";
+		document.getElementById("secDiscography").style.display = "none";
+	}, false);
+	document.getElementById("menuDiscography").addEventListener('click', function () {
+		console.log("change...")
+		document.getElementById("secNews").style.display = "none";
+		document.getElementById("secProfile").style.display = "none";
+		document.getElementById("secGallary").style.display = "none";
+		document.getElementById("secDiscography").style.display = "block";
+	}, false);
+</script>
 
 </html>
