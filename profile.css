@@ -1,0 +1,57 @@
+/* profileセクションのデザイン */
+.secProfile {
+	display: block;
+	padding-top: 0;
+}
+
+.profilePerson {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+
+.profileFace {
+	width: 200px;
+	height: 200px;
+	box-sizing: border-box;
+	object-fit: cover;
+	/* border: solid 1px red; */
+
+}
+
+.profileData {
+	width: calc(390px);
+	box-sizing: border-box;
+	/* border: solid 1px red; */
+	/* display: flex;
+	flex-wrap: wrap;
+	flex-direction: ; */
+}
+
+.profileData:nth-child(3) {
+	width: 100%;
+	overflow-wrap: break-word;
+}
+
+.profileItem {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profileItem div:nth-child(1) {
+	width: 100px;
+	box-sizing: border-box;
+	/* border: solid 1px green; */
+}
+
+.profileItem div:nth-child(2) {
+	width: 200px;
+	box-sizing: border-box;
+	/* border: solid 1px lime; */
+}
+.personalPhoto{
+	width: 200px;
+	height: 200px;
+	object-fit: contain;
+	padding: 5px;
+}

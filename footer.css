@@ -1,0 +1,13 @@
+/* footerセクションのデザイン */
+footer {
+	border-left: none;
+	border-top: solid 2px black;
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+}
+
+footer div {
+	align-items: center;
+	margin: 0 auto;
+}

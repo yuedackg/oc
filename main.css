@@ -1,3 +1,9 @@
 
-@import url("./news.css");
-
+/* @import url("./news.css"); */
+/* mainセクションのデザイン */
+section {
+	box-sizing: border-box;
+	/* border: solid 1px pink; */
+	width: calc(800px - 200px - 10px);
+	padding-top: 10px;
+}
