@@ -63,13 +63,40 @@ function init() {
     }
 
     // 外周部を壁にする
+    for (var i = 0; i < 51; i++) {
+        maze[0][i] = MazeWall
+        maze[i][0] = MazeWall
+        maze[MazeSize - 1][i] = MazeWall
+        maze[i][MazeSize - 1] = MazeWall
 
+    }
     //  通れない壁を設定する
-
+    for (var i = 2; i < 51 - 2; i += 2) {
+        for (var j = 2; j < 51 - 2; j += 2) {
+            maze[i][j] = 1
+        }
+    }
     // 壁を作る
     for (var i = 2; i < 51 - 2; i += 2) {
         for (var j = 2; j < 51 - 2; j += 2) {
- 
+            var houkou = random4()
+            switch (houkou) {
+                case 1:
+                    maze[i - 1][j] = MazeWall
+                    break;
+                case 2:
+                    maze[i + 1][j] = MazeWall
+                    break;
+                case 3:
+                    maze[i][j - 1] = MazeWall
+                    break;
+                case 4:
+                    maze[i][j + 1] = MazeWall
+                    break;
+
+                default:
+                    alert("error")
+            }
         }
     }
     maze[0][0] = maze[1][0] = maze[1][1] = maze[0][1] = 0
